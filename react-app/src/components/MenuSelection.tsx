@@ -54,6 +54,9 @@ class  MenuSelection extends React.Component<MenuSelectionProps, MenuSelectionSt
     if (typeof enabledList[this.state.selectedMainDish] === 'undefined') {
       enableSubmit = false;
     }
+    if (typeof enabledList[this.state.selectedSideDish] === 'undefined') {
+      enableSubmit = false;
+    }
 
     this.setState({
       enabledMainDishes: enabledList,
